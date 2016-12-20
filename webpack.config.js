@@ -5,6 +5,7 @@ module.exports = {
   entry: './Front/js/app.js',
   output: {
     path: path.resolve(__dirname, 'Front/', 'build/'),
+    publicPath: '/assets/',
     filename: 'bundle.js'
   },
   module: {
