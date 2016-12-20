@@ -3,11 +3,11 @@ const path = require('path')
 const WebpackDevServer = require('webpack-dev-server')
 const webpack = require('webpack')
 const config = require('./webpack.config')
-config.entry.unshift('webpack-dev-server/client?http://localhost:8080/')
+config.entry.unshift('webpack-dev-server/client?http://localhost:8080/', 'webpack/hot/dev-server')
 const compiler = webpack(config)
 
 let server = new WebpackDevServer(compiler, {
-  hot: false,
+  hot: true,
   historyApiFallback: true,
   quiet: false,
   noInfo: false,

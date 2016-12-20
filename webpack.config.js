@@ -1,5 +1,6 @@
 /* Dependencies */
 const path = require('path')
+const webpack = require('webpack')
 
 module.exports = {
   entry: ['./Front/js/app.js'],
@@ -18,5 +19,8 @@ module.exports = {
         ]
       }
     ]
-  }
+  },
+  plugins: [
+    new webpack.HotModuleReplacementPlugin()
+  ]
 }
