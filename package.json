@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/KaliAsha/starter-project.git"
+    "url": "git+https://github.com/KaliAsha/project-starter.git"
   },
   "keywords": [],
   "author": "KaliAsha",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/KaliAsha/starter-project/issues"
+    "url": "https://github.com/KaliAsha/project-starter/issues"
   },
-  "homepage": "https://github.com/KaliAsha/starter-project#readme",
+  "homepage": "https://github.com/KaliAsha/project-starter#readme",
   "devDependencies": {
     "babel-core": "^6.21.0",
     "babel-loader": "^6.2.10",
