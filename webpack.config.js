@@ -2,19 +2,19 @@
 const path = require('path')
 
 module.exports = {
-  entry: './Front/js/app.js',
+  entry: ['./Front/js/app.js'],
   output: {
     path: path.resolve(__dirname, 'Front/', 'build/'),
     publicPath: '/assets/',
     filename: 'bundle.js'
   },
   module: {
-    rules: [
+    loaders: [
       {
         test: /\.css$/,
-        use: [
-          { loader: 'style-loader' },
-          { loader: 'css-loader' }
+        loaders: [
+          'style-loader',
+          'css-loader'
         ]
       }
     ]
